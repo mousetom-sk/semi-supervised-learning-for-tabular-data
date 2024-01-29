@@ -1,0 +1,89 @@
+Training set 1: All Labeled
+Configuration: {'alpha': 0.1, 'n_neighbors': 11}, Score: 0.7501756851721715
+Configuration: {'alpha': 0.1, 'n_neighbors': 13}, Score: 0.7431482782853127
+Configuration: {'alpha': 0.1, 'n_neighbors': 15}, Score: 0.7368236120871399
+Configuration: {'alpha': 0.1, 'n_neighbors': 17}, Score: 0.7329585382993675
+Configuration: {'alpha': 0.2, 'n_neighbors': 11}, Score: 0.7470133520730851
+Configuration: {'alpha': 0.2, 'n_neighbors': 13}, Score: 0.7410400562192551
+Configuration: {'alpha': 0.2, 'n_neighbors': 15}, Score: 0.736120871398454
+Configuration: {'alpha': 0.2, 'n_neighbors': 17}, Score: 0.7329585382993675
+Configuration: {'alpha': 0.3, 'n_neighbors': 11}, Score: 0.7438510189739986
+Configuration: {'alpha': 0.3, 'n_neighbors': 13}, Score: 0.7364722417427969
+Configuration: {'alpha': 0.3, 'n_neighbors': 15}, Score: 0.7294448348559381
+Configuration: {'alpha': 0.3, 'n_neighbors': 17}, Score: 0.7283907238229094
+Configuration: {'alpha': 0.4, 'n_neighbors': 11}, Score: 0.7378777231201686
+Configuration: {'alpha': 0.4, 'n_neighbors': 13}, Score: 0.7269852424455376
+Configuration: {'alpha': 0.4, 'n_neighbors': 15}, Score: 0.7217146872803936
+Configuration: {'alpha': 0.4, 'n_neighbors': 17}, Score: 0.7238229093464511
+Best Score: 0.7501756851721715
+
+Training set 2: 10% Labeled
+Configuration: {'alpha': 0.1, 'n_neighbors': 11}, Score: 0.6539002108222066
+Configuration: {'alpha': 0.1, 'n_neighbors': 13}, Score: 0.6553056921995783
+Configuration: {'alpha': 0.1, 'n_neighbors': 15}, Score: 0.6542515811665496
+Configuration: {'alpha': 0.1, 'n_neighbors': 17}, Score: 0.6651440618411806
+Configuration: {'alpha': 0.2, 'n_neighbors': 11}, Score: 0.6542515811665496
+Configuration: {'alpha': 0.2, 'n_neighbors': 13}, Score: 0.6581166549543218
+Configuration: {'alpha': 0.2, 'n_neighbors': 15}, Score: 0.6602248770203795
+Configuration: {'alpha': 0.2, 'n_neighbors': 17}, Score: 0.6644413211524948
+Configuration: {'alpha': 0.3, 'n_neighbors': 11}, Score: 0.6567111735769501
+Configuration: {'alpha': 0.3, 'n_neighbors': 13}, Score: 0.6612789880534083
+Configuration: {'alpha': 0.3, 'n_neighbors': 15}, Score: 0.6654954321855235
+Configuration: {'alpha': 0.3, 'n_neighbors': 17}, Score: 0.6623330990864371
+Configuration: {'alpha': 0.4, 'n_neighbors': 11}, Score: 0.6584680252986648
+Configuration: {'alpha': 0.4, 'n_neighbors': 13}, Score: 0.6633872101194659
+Configuration: {'alpha': 0.4, 'n_neighbors': 15}, Score: 0.6633872101194659
+Configuration: {'alpha': 0.4, 'n_neighbors': 17}, Score: 0.6616303583977512
+Best Score: 0.6654954321855235
+
+Model 1
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.7547    0.7252    0.7397      4131
+           1     0.7660    0.8371    0.8000      5525
+           2     0.6732    0.7862    0.7253       697
+           3     0.7500    0.1111    0.1935        54
+           4     0.5217    0.1297    0.2078       185
+           5     0.4500    0.2920    0.3542       339
+           6     0.8383    0.4925    0.6205       400
+
+    accuracy                         0.7497     11331
+   macro avg     0.6791    0.4820    0.5201     11331
+weighted avg     0.7452    0.7497    0.7412     11331
+
+[[2996 1086    7    0    0    4   38]
+ [ 779 4625   65    0   18   38    0]
+ [   0   78  548    1    2   68    0]
+ [   0    0   41    6    0    7    0]
+ [   9  142    6    0   24    4    0]
+ [   4   86  147    1    2   99    0]
+ [ 182   21    0    0    0    0  197]]
+
+Model 2
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.6626    0.6224    0.6419      4131
+           1     0.6930    0.7795    0.7337      5525
+           2     0.6205    0.6944    0.6554       697
+           3     0.6667    0.1111    0.1905        54
+           4     0.3504    0.2216    0.2715       185
+           5     0.3544    0.1652    0.2254       339
+           6     0.8023    0.3450    0.4825       400
+
+    accuracy                         0.6710     11331
+   macro avg     0.5929    0.4199    0.4573     11331
+weighted avg     0.6655    0.6710    0.6612     11331
+
+[[2571 1507    6    0   11    3   33]
+ [1079 4307   65    0   50   23    1]
+ [   2  127  484    3   11   70    0]
+ [   0    5   40    6    0    3    0]
+ [  12  126    3    0   41    3    0]
+ [   7   90  182    0    4   56    0]
+ [ 209   53    0    0    0    0  138]]

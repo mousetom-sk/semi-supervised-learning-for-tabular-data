@@ -1,0 +1,73 @@
+Training set 1: All Labeled
+Configuration: {'learning_rate_init': 0.001, 'hidden_layer_sizes': (64,), 'activation': 'tanh'}, Score: 0.7786366830639494
+Configuration: {'learning_rate_init': 0.01, 'hidden_layer_sizes': (16,), 'activation': 'tanh'}, Score: 0.7702037947997189
+Configuration: {'learning_rate_init': 0.001, 'hidden_layer_sizes': (16,), 'activation': 'tanh'}, Score: 0.7596626844694307
+Configuration: {'learning_rate_init': 0.01, 'hidden_layer_sizes': (32,), 'activation': 'tanh'}, Score: 0.7758257203092059
+Configuration: {'learning_rate_init': 0.001, 'hidden_layer_sizes': (32,), 'activation': 'tanh'}, Score: 0.7709065354884048
+Configuration: {'learning_rate_init': 0.001, 'hidden_layer_sizes': (32,), 'activation': 'relu'}, Score: 0.7547434996486296
+Configuration: {'learning_rate_init': 0.01, 'hidden_layer_sizes': (64,), 'activation': 'tanh'}, Score: 0.7828531271960647
+Configuration: {'learning_rate_init': 0.01, 'hidden_layer_sizes': (32,), 'activation': 'relu'}, Score: 0.758257203092059
+Best Score: 0.7828531271960647
+
+Training set 2: 10% Labeled
+Configuration: {'learning_rate_init': 0.001, 'hidden_layer_sizes': (64,), 'activation': 'tanh'}, Score: 0.7224174279690794
+Configuration: {'learning_rate_init': 0.01, 'hidden_layer_sizes': (16,), 'activation': 'tanh'}, Score: 0.6820098383696416
+Configuration: {'learning_rate_init': 0.001, 'hidden_layer_sizes': (16,), 'activation': 'tanh'}, Score: 0.7132817990161631
+Configuration: {'learning_rate_init': 0.01, 'hidden_layer_sizes': (32,), 'activation': 'tanh'}, Score: 0.674279690794097
+Configuration: {'learning_rate_init': 0.001, 'hidden_layer_sizes': (32,), 'activation': 'tanh'}, Score: 0.7206605762473647
+Configuration: {'learning_rate_init': 0.001, 'hidden_layer_sizes': (32,), 'activation': 'relu'}, Score: 0.7118763176387913
+Configuration: {'learning_rate_init': 0.01, 'hidden_layer_sizes': (64,), 'activation': 'tanh'}, Score: 0.6693605059732959
+Configuration: {'learning_rate_init': 0.01, 'hidden_layer_sizes': (32,), 'activation': 'relu'}, Score: 0.6763879128601546
+Best Score: 0.7224174279690794
+
+Model 1
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.7999    0.7567    0.7777      4131
+           1     0.8080    0.8434    0.8254      5525
+           2     0.7397    0.7704    0.7547       697
+           3     0.5614    0.5926    0.5766        54
+           4     0.3793    0.3568    0.3677       185
+           5     0.5217    0.4248    0.4683       339
+           6     0.7305    0.7725    0.7509       400
+
+    accuracy                         0.7832     11331
+   macro avg     0.6487    0.6453    0.6459     11331
+weighted avg     0.7814    0.7832    0.7817     11331
+
+[[3126  876    1    0   22    1  105]
+ [ 685 4660   56    2   77   37    8]
+ [   0   51  537   13    7   89    0]
+ [   0    0   18   32    0    4    0]
+ [  10  104    3    0   66    1    1]
+ [   3   69  111   10    2  144    0]
+ [  84    7    0    0    0    0  309]]
+
+Model 2
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.6998    0.7139    0.7068      4131
+           1     0.7505    0.7828    0.7663      5525
+           2     0.6646    0.7676    0.7124       697
+           3     0.4615    0.3333    0.3871        54
+           4     0.6129    0.1027    0.1759       185
+           5     0.3648    0.1711    0.2329       339
+           6     0.7281    0.5825    0.6472       400
+
+    accuracy                         0.7181     11331
+   macro avg     0.6117    0.4934    0.5184     11331
+weighted avg     0.7108    0.7181    0.7097     11331
+
+[[2949 1093    2    0    2    3   82]
+ [1097 4325   47    0    9   42    5]
+ [   0   94  535   19    1   48    0]
+ [   0    2   29   18    0    5    0]
+ [   4  155    4    0   19    3    0]
+ [   0   91  188    2    0   58    0]
+ [ 164    3    0    0    0    0  233]]

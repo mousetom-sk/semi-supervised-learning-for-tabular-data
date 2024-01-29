@@ -1,0 +1,77 @@
+Training set 1: All Labeled
+Configuration: {'n_neighbors': 15, 'gamma': 0.5}, Score: 0.6047083626141954
+Configuration: {'n_neighbors': 15, 'gamma': 1}, Score: 0.6366830639494027
+Configuration: {'n_neighbors': 13, 'gamma': 0.5}, Score: 0.6117357695010541
+Configuration: {'n_neighbors': 13, 'gamma': 1.5}, Score: 0.6546029515108924
+Configuration: {'n_neighbors': 17, 'gamma': 5}, Score: 0.6711173576950106
+Configuration: {'n_neighbors': 17, 'gamma': 1.5}, Score: 0.6510892480674632
+Configuration: {'n_neighbors': 11, 'gamma': 1}, Score: 0.6447645818692902
+Configuration: {'n_neighbors': 11, 'gamma': 1.5}, Score: 0.6549543218552354
+Configuration: {'n_neighbors': 17, 'gamma': 1}, Score: 0.6317638791286015
+Configuration: {'n_neighbors': 13, 'gamma': 0.1}, Score: 0.5846802529866479
+Best Score: 0.6711173576950106
+
+Training set 2: 10% Labeled
+Configuration: {'n_neighbors': 15, 'gamma': 0.5}, Score: 0.5477863668306395
+Configuration: {'n_neighbors': 15, 'gamma': 1}, Score: 0.534082923401265
+Configuration: {'n_neighbors': 13, 'gamma': 0.5}, Score: 0.5544624033731553
+Configuration: {'n_neighbors': 13, 'gamma': 1.5}, Score: 0.533380182712579
+Configuration: {'n_neighbors': 17, 'gamma': 5}, Score: 0.5094869992972593
+Configuration: {'n_neighbors': 17, 'gamma': 1.5}, Score: 0.5200281096275474
+Configuration: {'n_neighbors': 11, 'gamma': 1}, Score: 0.5555165144061841
+Configuration: {'n_neighbors': 11, 'gamma': 1.5}, Score: 0.5439212930428672
+Configuration: {'n_neighbors': 17, 'gamma': 1}, Score: 0.5298664792691496
+Configuration: {'n_neighbors': 13, 'gamma': 0.1}, Score: 0.5442726633872101
+Best Score: 0.5555165144061841
+
+Model 1
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.7227    0.6863    0.7040      4131
+           1     0.8107    0.6101    0.6963      5525
+           2     0.7780    0.6987    0.7362       697
+           3     0.3971    1.0000    0.5684        54
+           4     0.1646    0.9459    0.2804       185
+           5     0.4320    0.8437    0.5714       339
+           6     0.5033    0.9600    0.6604       400
+
+    accuracy                         0.6700     11331
+   macro avg     0.5440    0.8207    0.6024     11331
+weighted avg     0.7419    0.6700    0.6891     11331
+
+[[2835  766   10    0  159   41  320]
+ [1071 3371  101   12  708  203   59]
+ [   0    8  487   56   16  130    0]
+ [   0    0    0   54    0    0    0]
+ [   0    6    2    0  175    2    0]
+ [   3    6   26   14    4  286    0]
+ [  14    1    0    0    1    0  384]]
+
+Model 2
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.5915    0.5655    0.5782      4131
+           1     0.7116    0.5110    0.5948      5525
+           2     0.6104    0.5753    0.5923       697
+           3     0.2649    0.9074    0.4100        54
+           4     0.1331    0.7297    0.2252       185
+           5     0.2884    0.6313    0.3959       339
+           6     0.3917    0.8000    0.5259       400
+
+    accuracy                         0.5541     11331
+   macro avg     0.4274    0.6743    0.4746     11331
+weighted avg     0.6261    0.5541    0.5733     11331
+
+[[2336 1099    9    0  210   73  404]
+ [1532 2823  157   11  639  270   93]
+ [   1    6  401  100   22  167    0]
+ [   0    0    2   49    0    3    0]
+ [   7   19    9    0  135   15    0]
+ [   5    9   79   25    7  214    0]
+ [  68   11    0    0    1    0  320]]

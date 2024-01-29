@@ -1,0 +1,69 @@
+Training set 1: All Labeled
+Configuration: {'min_confidence': 0.85}, Score: 0.7786366830639494
+Configuration: {'min_confidence': 0.9}, Score: 0.7786366830639494
+Configuration: {'min_confidence': 0.925}, Score: 0.7786366830639494
+Configuration: {'min_confidence': 0.95}, Score: 0.7786366830639494
+Best Score: 0.7786366830639494
+
+Training set 2: 10% Labeled
+Added 8509 unlabeled examples in total.
+Configuration: {'min_confidence': 0.85}, Score: 0.7146872803935348
+Added 8021 unlabeled examples in total.
+Configuration: {'min_confidence': 0.9}, Score: 0.7143359100491918
+Added 8233 unlabeled examples in total.
+Configuration: {'min_confidence': 0.925}, Score: 0.7062543921293043
+Added 7700 unlabeled examples in total.
+Configuration: {'min_confidence': 0.95}, Score: 0.7048489107519326
+Best Score: 0.7146872803935348
+
+Model 1
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.7770    0.7674    0.7721      4131
+           1     0.7998    0.8353    0.8172      5525
+           2     0.7483    0.7719    0.7599       697
+           3     0.7073    0.5370    0.6105        54
+           4     0.5882    0.2162    0.3162       185
+           5     0.4826    0.4100    0.4434       339
+           6     0.8110    0.7400    0.7739       400
+
+    accuracy                         0.7790     11331
+   macro avg     0.7020    0.6111    0.6419     11331
+weighted avg     0.7753    0.7790    0.7754     11331
+
+[[3170  888    4    0    1    2   66]
+ [ 796 4615   38    1   23   49    3]
+ [   0   59  538    7    1   92    0]
+ [   0    0   22   29    0    3    0]
+ [   7  130    5    0   40    3    0]
+ [   6   75  112    4    3  139    0]
+ [ 101    3    0    0    0    0  296]]
+
+Model 2
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.7084    0.7088    0.7086      4131
+           1     0.7511    0.7810    0.7657      5525
+           2     0.6195    0.7661    0.6851       697
+           3     0.5882    0.3704    0.4545        54
+           4     0.5102    0.1351    0.2137       185
+           5     0.3614    0.1770    0.2376       339
+           6     0.7368    0.6300    0.6792       400
+
+    accuracy                         0.7179     11331
+   macro avg     0.6108    0.5098    0.5349     11331
+weighted avg     0.7106    0.7179    0.7106     11331
+
+[[2928 1113    2    0    2    3   83]
+ [1054 4315   83    0   20   46    7]
+ [   0   95  534   12    0   56    0]
+ [   0    2   31   20    0    1    0]
+ [   6  149    5    0   25    0    0]
+ [   2   66  207    2    2   60    0]
+ [ 143    5    0    0    0    0  252]]

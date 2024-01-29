@@ -1,0 +1,81 @@
+Training set 1: All Labeled
+/home/tom/.local/lib/python3.10/site-packages/sklearn/semi_supervised/_self_training.py:214: UserWarning: y contains no unlabeled samples
+  warnings.warn("y contains no unlabeled samples", UserWarning)
+Configuration: {'threshold': 0.9}, Score: 0.7434996486296557
+/home/tom/.local/lib/python3.10/site-packages/sklearn/semi_supervised/_self_training.py:214: UserWarning: y contains no unlabeled samples
+  warnings.warn("y contains no unlabeled samples", UserWarning)
+Configuration: {'threshold': 0.95}, Score: 0.7434996486296557
+/home/tom/.local/lib/python3.10/site-packages/sklearn/semi_supervised/_self_training.py:214: UserWarning: y contains no unlabeled samples
+  warnings.warn("y contains no unlabeled samples", UserWarning)
+Configuration: {'threshold': 0.98}, Score: 0.7434996486296557
+/home/tom/.local/lib/python3.10/site-packages/sklearn/semi_supervised/_self_training.py:214: UserWarning: y contains no unlabeled samples
+  warnings.warn("y contains no unlabeled samples", UserWarning)
+Configuration: {'threshold': 0.99}, Score: 0.7434996486296557
+Best Score: 0.7434996486296557
+
+Training set 2: 10% Labeled
+Configuration: {'threshold': 0.9}, Score: 0.5491918482080113
+Configuration: {'threshold': 0.95}, Score: 0.5871398453970484
+Configuration: {'threshold': 0.98}, Score: 0.6036542515811666
+Configuration: {'threshold': 0.99}, Score: 0.5983836964160225
+Best Score: 0.6036542515811666
+
+Model 1
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.7599    0.7662    0.7630      4131
+           1     0.8579    0.6871    0.7630      5525
+           2     0.8159    0.8264    0.8211       697
+           3     0.5455    1.0000    0.7059        54
+           4     0.2412    0.9297    0.3831       185
+           5     0.5471    0.8909    0.6779       339
+           6     0.5753    0.9650    0.7208       400
+
+    accuracy                         0.7458     11331
+   macro avg     0.6204    0.8665    0.6907     11331
+weighted avg     0.7887    0.7458    0.7561     11331
+
+[[3165  616    5    0   71   16  258]
+ [ 985 3796  104    4  457  152   27]
+ [   0    1  576   32   10   78    0]
+ [   0    0    0   54    0    0    0]
+ [   1    7    1    0  172    4    0]
+ [   0    5   20    9    3  302    0]
+ [  14    0    0    0    0    0  386]]
+
+Model 2
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.6425    0.6013    0.6212      4131
+           1     0.7717    0.5426    0.6372      5525
+           2     0.7077    0.6428    0.6737       697
+           3     0.3125    0.9259    0.4673        54
+           4     0.1362    0.8432    0.2346       185
+           5     0.3692    0.7080    0.4853       339
+           6     0.3569    0.8850    0.5086       400
+
+    accuracy                         0.5939     11331
+   macro avg     0.4710    0.7355    0.5183     11331
+weighted avg     0.6814    0.5939    0.6172     11331
+
+[[2484  858    6    0  221   17  545]
+ [1340 2998  114    4  737  239   93]
+ [   0    6  448   81   19  143    0]
+ [   0    0    2   50    0    2    0]
+ [   5   12    3    0  156    9    0]
+ [   0    7   59   25    8  240    0]
+ [  37    4    1    0    4    0  354]]
+
+Model 1
+
+Labeled examples: (array([0, 0, 0, 0, 0, 0]), array([0, 1, 2, 3, 4, 5, 6]))
+
+Model 2
+
+Labeled examples: (array([  2,   5,   8, 708, 207, 243]), array([0, 1, 2, 3, 4, 5, 6]))

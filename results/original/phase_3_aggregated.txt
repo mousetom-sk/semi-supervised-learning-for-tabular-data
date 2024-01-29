@@ -1,0 +1,10 @@
+                  All Labeled          10% Labeled
+Model          Precision  Recall    Precision  Recall
+-----------------------------------------------------
+LP + MLP           -          -     0.7082     0.7155
+LP + RF            -          -     0.7186     0.7210
+CST - MLP          -          -     0.7106     0.7179
+CST - RF           -          -     0.7218     0.7252
+CT - MLP + RF   0.8052     0.8079   0.7170     0.7239
+
+* precision and recall are weighted by the original class distribution

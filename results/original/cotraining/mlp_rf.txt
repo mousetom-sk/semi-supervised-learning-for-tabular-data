@@ -1,0 +1,73 @@
+Training set 1: All Labeled
+Configuration: {'min_confidence': 0.85}, Score: 0.8106113843991567
+Configuration: {'min_confidence': 0.9}, Score: 0.8106113843991567
+Configuration: {'min_confidence': 0.925}, Score: 0.8106113843991567
+Configuration: {'min_confidence': 0.95}, Score: 0.8106113843991567
+Best Score: 0.8106113843991567
+
+Training set 2: 10% Labeled
+Left 1343 unlabeled examples not used by estimator 1.
+left 1001 unlabeled examples not used by estimator 2.
+Configuration: {'min_confidence': 0.85}, Score: 0.7210119465917076
+Left 2923 unlabeled examples not used by estimator 1.
+left 2266 unlabeled examples not used by estimator 2.
+Configuration: {'min_confidence': 0.9}, Score: 0.71890372452565
+Left 4295 unlabeled examples not used by estimator 1.
+left 3605 unlabeled examples not used by estimator 2.
+Configuration: {'min_confidence': 0.925}, Score: 0.7220660576247365
+Left 6907 unlabeled examples not used by estimator 1.
+left 6308 unlabeled examples not used by estimator 2.
+Configuration: {'min_confidence': 0.95}, Score: 0.71890372452565
+Best Score: 0.7220660576247365
+
+Model 1
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.8129    0.7879    0.8002      4131
+           1     0.8155    0.8702    0.8420      5525
+           2     0.7776    0.8379    0.8066       697
+           3     0.7838    0.5370    0.6374        54
+           4     0.7258    0.2432    0.3644       185
+           5     0.5992    0.4189    0.4931       339
+           6     0.8459    0.7275    0.7823       400
+
+    accuracy                         0.8079     11331
+   macro avg     0.7658    0.6318    0.6751     11331
+weighted avg     0.8052    0.8079    0.8033     11331
+
+[[3255  822    2    0    0    0   52]
+ [ 634 4808   38    1   15   28    1]
+ [   0   48  584    4    0   61    0]
+ [   0    0   22   29    0    3    0]
+ [   5  130    2    0   45    3    0]
+ [   3   86  103    3    2  142    0]
+ [ 107    2    0    0    0    0  291]]
+
+Model 2
+
+Labels Mapping: [(0, 'Spruce/Fir'), (1, 'Lodgepole Pine'), (2, 'Ponderosa Pine'), (3, 'Cottonwood/Willow'), (4, 'Aspen'), (5, 'Douglas Fir'), (6, 'Krummholz')]
+
+              precision    recall  f1-score   support
+
+           0     0.7197    0.6991    0.7092      4131
+           1     0.7458    0.8071    0.7752      5525
+           2     0.6228    0.8149    0.7060       697
+           3     0.5882    0.1852    0.2817        54
+           4     0.6667    0.1189    0.2018       185
+           5     0.4286    0.0973    0.1587       339
+           6     0.7400    0.5550    0.6343       400
+
+    accuracy                         0.7239     11331
+   macro avg     0.6445    0.4682    0.4953     11331
+weighted avg     0.7170    0.7239    0.7118     11331
+
+[[2888 1169    2    0    1    0   71]
+ [ 954 4459   75    0   10   20    7]
+ [   0   99  568    7    0   23    0]
+ [   0    2   41   10    0    1    0]
+ [   4  154    5    0   22    0    0]
+ [   1   84  221    0    0   33    0]
+ [ 166   12    0    0    0    0  222]]

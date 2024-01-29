@@ -1,0 +1,7 @@
+                    All Labeled          10% Labeled
+Model            Precision  Recall    Precision  Recall
+-------------------------------------------------------
+LP - kNN dist    0.7872     0.7903    0.6896     0.6981
+LS - kNN dist    0.7832     0.7867    0.6820     0.6912
+
+* precision and recall are weighted by the original class distribution

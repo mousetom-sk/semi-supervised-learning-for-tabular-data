@@ -1,0 +1,13 @@
+               All Labeled          10% Labeled
+Model       Precision  Recall    Precision  Recall
+--------------------------------------------------
+MLP         0.7814     0.7832    0.7108     0.7181
+RF          0.8193     0.8200    0.7225     0.7261
+LP - RBF    0.7836     0.7863    0.6718     0.6770
+LP - kNN    0.7457     0.7513    0.6503     0.6580
+LS - RBF    0.7825     0.7851    0.6833     0.6917
+LS - kNN    0.7452     0.7497    0.6655     0.6710
+ST - MLP       -          -      0.7125     0.7195
+ST - RF        -          -      0.7225     0.7261
+
+* precision and recall are weighted by the original class distribution
